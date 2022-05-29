@@ -28,7 +28,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 50px;
-  margin-bottom: calc(220px + 50 * (100vh / 900));
+  margin-bottom: 30vh;
 }
 
 .autorization {
@@ -143,7 +143,7 @@ h1 {
   font-family: "Helvetica Neue Cyr Medium";
   font-style: normal;
   font-weight: 700;
-  font-size: calc(50px + 33 * (100vw / 1600));
+  font-size: calc(50px + 2.0625vw);
   line-height: 65px;
   /* identical to box height */
   letter-spacing: 0.25em;
@@ -243,14 +243,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 2%;
+  width: 149px;
   position: absolute;
-  bottom: 2%;
-  right: 5%;
+  right: 60px;
+  bottom: 10px;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer a {
-  margin-right: 10%;
+  margin-right: 26px;
 }
 
 footer a:last-child {
@@ -259,11 +263,11 @@ footer a:last-child {
 
 @media (max-width: 768px) {
   header {
-    margin-bottom: 30%;
+    margin-bottom: 25vh;
   }
 
   h1 {
-    font-size: calc(30px + 70 * (100vw / 1600));
+    font-size: calc(30px + 4.375vw);
   }
 
   p {
@@ -271,7 +275,16 @@ footer a:last-child {
     margin-bottom: 5%;
   }
 }
+@media (max-width: 620px) {
+  header {
+    margin-bottom: 15vh;
+  }
+}
 @media (max-width: 467px) {
+  header {
+    margin-bottom: 20%;
+  }
+
   .actionInput {
     width: 300px;
   }

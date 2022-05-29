@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    margin-bottom: calc(220px + 50 * (100vh / 900));
+    margin-bottom: 30vh;
 }
 
 .autorization {
@@ -252,14 +252,17 @@ p {
 
 footer {
     display: flex;
-    padding-bottom: 2%;
+    width: 149px;
     position: absolute;
-    bottom: 2%;
-    right: 5%;
+    right: 60px;
+    bottom: 10px;
+    overflow: hidden;
+    justify-content: center;
+    
 }
 
 footer a {
-    margin-right: 10%;
+    margin-right: 26px;
 }
 
 footer a:last-child {
@@ -268,7 +271,7 @@ footer a:last-child {
 
 @media (max-width: 768px) {
     header {
-        margin-bottom: 30%;
+        margin-bottom: 25vh;
     }
 
     h1 {
@@ -281,7 +284,18 @@ footer a:last-child {
     }
 }
 
+@media (max-width: 620px){
+    header{
+        margin-bottom: 15vh;
+    }
+}
+
 @media (max-width: 467px) {
+
+    header{
+        margin-bottom: 20%;
+    }
+
     .actionInput {
         width: 300px;
     }
@@ -292,6 +306,7 @@ footer a:last-child {
         justify-content: center;
         align-items: center;
         right: 0;
+      
     }
 
     .autorization {
